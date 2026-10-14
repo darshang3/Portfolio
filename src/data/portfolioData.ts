@@ -1,12 +1,17 @@
 import { PersonalProfile, Project, ExperienceItem, EducationItem } from '../types/portfolio';
+import heroWorkspaceImg from '../assets/images/hero_designer_workspace_1791959475945.jpg';
+import projectDesignSystemImg from '../assets/images/project_design_system_1791959477816.jpg';
+import projectFintechImg from '../assets/images/project_fintech_wealth_1791959478360.jpg';
+import projectAiImg from '../assets/images/project_ai_orchestration_1791959477890.jpg';
+import projectHealthImg from '../assets/images/project_health_platform_1791959478372.jpg';
 
-// Generated authentic visual assets
+// Bundled authentic visual assets with static fallbacks
 export const IMAGES = {
-  heroWorkspace: '/src/assets/images/hero_designer_workspace_1791959475945.jpg',
-  projectDesignSystem: '/src/assets/images/project_design_system_1791959477816.jpg',
-  projectFintech: '/src/assets/images/project_fintech_wealth_1791959478360.jpg',
-  projectAi: '/src/assets/images/project_ai_orchestration_1791959477890.jpg',
-  projectHealth: '/src/assets/images/project_health_platform_1791959478372.jpg',
+  heroWorkspace: heroWorkspaceImg || '/assets/images/hero_designer_workspace_1791959475945.jpg',
+  projectDesignSystem: projectDesignSystemImg || '/assets/images/project_design_system_1791959477816.jpg',
+  projectFintech: projectFintechImg || '/assets/images/project_fintech_wealth_1791959478360.jpg',
+  projectAi: projectAiImg || '/assets/images/project_ai_orchestration_1791959477890.jpg',
+  projectHealth: projectHealthImg || '/assets/images/project_health_platform_1791959478372.jpg',
 };
 
 export const defaultProfile: PersonalProfile = {
